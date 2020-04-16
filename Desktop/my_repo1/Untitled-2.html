@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+
+    <style>
+     .body {
+         font-family: 'Times New Roman', Times, serif;
+     }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <p>(₪) סכום המשכנתא</p>
+        <div class="input">
+            <input type="text" id="keren" onchange="checkInput(this,'Error')">
+            <p id="keren"></p>
+        </div>
+
+
+        <div class="input">
+            <p>ריבית שנתית</p>
+            <input type="text" id="ribit" onchange="checkInput(this,'Error')">
+            <p id="ribit"></p>
+        </div>
+
+        <div class="input">
+            <p>תקופה בשנים</p>
+            <input type="text" id="month" onchange="checkInput(this,'Error')">
+            <p id="month"></p>
+        </div>
+
+        <div class="input">
+            <p>סכום רצוי לתשלום על ידי משתמש
+            </p>
+            <input type="text" id="refund" onchange="checkInput(this,'Error')">
+            <p id="refund"></p>
+        </div>
+
+
+            <button type="button" onclick="calcPay()">
+                חשב
+            </button>
+    <div id="result"></div>
+    <div id="result1"></div>
+
+
+    <script src="Mortgage_Calculator.js"></script>
+
+</body>
+</html> 
